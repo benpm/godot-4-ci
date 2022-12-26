@@ -1,5 +1,5 @@
 FROM mono:latest
-LABEL author="https://github.com/aBARICHELLO/godot-ci/graphs/contributors"
+LABEL author="https://github.com/benpm/godot-4-ci/graphs/contributors"
 
 USER root
 ENV DEBIAN_FRONTEND=noninteractive
@@ -17,11 +17,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # When in doubt see the downloads page
 # https://downloads.tuxfamily.org/godotengine/
-ARG GODOT_VERSION="3.4.2"
+ARG GODOT_VERSION="4.0"
 
 # Example values: stable, beta3, rc1, alpha2, etc.
 # Also change the SUBDIR property when NOT using stable
-ARG RELEASE_NAME="stable"
+ARG RELEASE_NAME="beta8"
 
 # This is only needed for non-stable builds (alpha, beta, RC)
 # e.g. SUBDIR "/beta3"

@@ -12,7 +12,7 @@ on:
         default: "stable"
         required: true
 env:
-  IMAGE_NAME: godot-ci
+  IMAGE_NAME: godot-4-ci
 jobs:
   build:
     name: Build Image
