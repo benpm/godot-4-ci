@@ -25,8 +25,8 @@ ARG SUBDIR=""
 
 # URL: https://downloads.tuxfamily.org/godotengine/4.0/beta8/Godot_v4.0-beta8_linux.x86_64.zip
 
-RUN wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}${SUBDIR}/Godot_v${GODOT_VERSION}-${RELEASE_NAME}_linux.x86_64.zip \
-    && wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}${SUBDIR}/Godot_v${GODOT_VERSION}-${RELEASE_NAME}_export_templates.tpz \
+RUN wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}${SUBDIR}/${RELEASE_NAME}/Godot_v${GODOT_VERSION}-${RELEASE_NAME}_linux.x86_64.zip \
+    && wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}${SUBDIR}/${RELEASE_NAME}/Godot_v${GODOT_VERSION}-${RELEASE_NAME}_export_templates.tpz \
     && mkdir ~/.cache \
     && mkdir -p ~/.config/godot \
     && mkdir -p ~/.local/share/godot/templates/${GODOT_VERSION}.${RELEASE_NAME} \
