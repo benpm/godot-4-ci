@@ -11,12 +11,14 @@ jobs:
     outputs:
       version: ${{ steps.calculate.outputs.version }}
       release_name: ${{ steps.calculate.outputs.release_name }}
+      image_tag: ${{ steps.calculate.outputs.image_tag }}
     steps:
       - id: calculate
         run: |
           REF_NAME=${{ github.ref_name }}
-          echo "version=${REF_NAME#*-}" >> $GITHUB_OUTPUT
+          echo "version=${REF_NAME%*-}" >> $GITHUB_OUTPUT
           echo "release_name=${REF_NAME#*-}" >> $GITHUB_OUTPUT
+          echo "image_tag=${REF_NAME}" >> $GITHUB_OUTPUT
   build:
     name: Build Image
     runs-on: ubuntu-20.04
@@ -42,10 +44,10 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ env.IMAGE_OWNER }}/${{ env.IMAGE_NAME }}:${{ needs.version.outputs.version }}
+            ghcr.io/${{ env.IMAGE_OWNER }}/${{ env.IMAGE_NAME }}:${{ needs.version.outputs.image_tag }}
             ghcr.io/${{ env.IMAGE_OWNER }}/${{ env.IMAGE_NAME }}:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ needs.version.outputs.version }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ needs.version.outputs.image_tag }}
           build-args: |
             GODOT_VERSION=${{ needs.version.outputs.version }}
             RELEASE_NAME=${{ needs.version.outputs.release_name }}
