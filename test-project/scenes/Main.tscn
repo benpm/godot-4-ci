@@ -41,5 +41,7 @@ offset_left = 625.0
 offset_top = 820.0
 offset_right = 625.0
 offset_bottom = 820.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [connection signal="start_zoom_out" from="." to="." method="_on_Main_start_zoom_out"]
