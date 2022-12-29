@@ -20,7 +20,7 @@ jobs:
           lfs: true
       - name: Setup
         run: |
-          mkdir -v -p ~/.local/share/godot/templates/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
+          mkdir -v -p ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
           mv /root/.local/share/godot/templates/${GODOT_VERSION}.${RELEASE_NAME} ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
       - name: Windows Build
         run: |
@@ -45,7 +45,7 @@ jobs:
           lfs: true
       - name: Setup
         run: |
-          mkdir -v -p ~/.local/share/godot/templates/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
+          mkdir -v -p ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
           mv /root/.local/share/godot/templates/${GODOT_VERSION}.${RELEASE_NAME} ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
       - name: Linux Build
         run: |
@@ -70,7 +70,7 @@ jobs:
           lfs: true
       - name: Setup
         run: |
-          mkdir -v -p ~/.local/share/godot/templates/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
+          mkdir -v -p ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
           mv /root/.local/share/godot/templates/${GODOT_VERSION}.${RELEASE_NAME} ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
       - name: Web Build
         run: |
@@ -103,7 +103,7 @@ jobs:
           lfs: true
       - name: Setup
         run: |
-          mkdir -v -p ~/.local/share/godot/templates/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
+          mkdir -v -p ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
           mv /root/.local/share/godot/templates/${GODOT_VERSION}.${RELEASE_NAME} ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}
       - name: Mac Build
         run: |
