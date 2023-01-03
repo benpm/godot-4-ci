@@ -1,8 +1,9 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1672192122
+::res://::1672770752
 default_env.tres::Environment::-1::1672089714::0::1::::<><>::
-export_presets.cfg::TextFile::-1::1672192122::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1672336166::0::1::::<><>::
 icon.png::CompressedTexture2D::3018037762740398137::1672087458::1672089726::1::::<><>::
+README.md::TextFile::-1::1672336304::0::1::::<><>::
 ::res://resources/::1672087458
 ::res://resources/gimp/::1672087458
 ::res://resources/img/::1672089726
@@ -12,7 +13,7 @@ bullet-placeholder.png::CompressedTexture2D::6374997847463784379::1672087458::16
 cat0.png::CompressedTexture2D::8644907133103605234::1672087458::1672089726::1::::<><>::
 coil.png::CompressedTexture2D::7741520233585981822::1672087458::1672089726::1::::<><>::
 missile-placeholder.png::CompressedTexture2D::5660973496775194705::1672087458::1672089726::1::::<><>::
-::res://scenes/::1672192131
+::res://scenes/::1672336167
 Arena.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/Arena.gd<>res://scenes/Background.tscn
 Background.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/ColoredEntity.gd<>res://resources/img/2.png
 Base.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/Base.gd
@@ -22,7 +23,7 @@ EnemyGenerator.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/En
 Game.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/Game.gd<>res://scenes/Arena.tscn<>res://scenes/Player.tscn<>res://scenes/Base.tscn<>res://scenes/EnemyGenerator.tscn
 GLOBAL.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/GLOBAL.gd
 HUD.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/HUD.gd
-Main.tscn::PackedScene::7226540625525681351::1672192131::0::1::::<><>::res://scripts/Main.gd<>res://scenes/Game.tscn<>res://scenes/HUD.tscn
+Main.tscn::PackedScene::7226540625525681351::1672336167::0::1::::<><>::res://scripts/Main.gd<>res://scenes/Game.tscn<>res://scenes/HUD.tscn
 Player.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/Player.gd<>res://scenes/Cannon.tscn<>res://resources/img/cat0.png
 Projectile.tscn::PackedScene::-1::1672089714::0::1::::<><>::res://scripts/Projectile.gd<>res://scripts/ColoredEntity.gd<>res://resources/img/missile-placeholder.png
 ::res://scripts/::1672089843
@@ -37,3 +38,4 @@ HUD.gd::GDScript::-1::1672089714::0::1::::<>Control<>::
 Main.gd::GDScript::-1::1672089714::0::1::::<>Node2D<>::
 Player.gd::GDScript::-1::1672089714::0::1::::<>Node2D<>::
 Projectile.gd::GDScript::-1::1672089959::0::1::::<>RigidBody2D<>::
+::res://web_include/::1672336192
